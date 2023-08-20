@@ -1,4 +1,6 @@
 import { event_list } from "../assets/data"   //list of events
+
+
 const OccasionTypes = () => {
   return (
     <div className="py-4">
