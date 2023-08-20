@@ -9,8 +9,8 @@ const PopularCategory = () => {
       {venue_list
         .filter((venue) => venue.category === 'most-popular')
         .map((venue) => (
-          <div key={venue.id} className="text-base md:text-lg">
-            <div className="w-40 md:w-56">
+          <div key={venue.id} className="text-base md:text-lg cursor-pointer">
+            <div className="w-40 md:w-56 ">
               {/* venue image */}
               <img className="rounded-xl" src={venue.image} alt={`Image of ${venue.name}`} />
             </div>

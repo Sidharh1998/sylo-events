@@ -11,7 +11,7 @@ const BudgetCategory = () => {
       {venue_list
         .filter((venue) => venue.category === 'budget')
         .map((venue) => (
-          <div key={venue.id} className="text-base  flex  gap-4 w-full md:w-96 rounded-2xl bg-gradient-to-r from-violet-100 via-white to-violet-100  pl-2" >
+          <div key={venue.id} className="text-base cursor-pointer flex  gap-4 w-full md:w-96 rounded-2xl bg-gradient-to-r from-violet-100 via-white to-violet-100  pl-2" >
             <div className="w-40 ">
               {/* venue image */}
               <div className="relative">

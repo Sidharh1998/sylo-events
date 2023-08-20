@@ -9,7 +9,7 @@ const OccasionTypes = () => {
       <div className="flex flex-wrap gap-4 pt-6 justify-between">      
         {event_list.map((events) => 
        (
-        <div className="w-24 md:w-32  flex flex-col ">
+        <div key={events.id} className="w-24 md:w-32  flex flex-col cursor-pointer ">
           {/* image amd name of occasions */}
           <img className="h-24 md:h-32 rounded-xl" src={events.image}/>
         <div className="text-center font-semibold text-sm">{events.name}</div>

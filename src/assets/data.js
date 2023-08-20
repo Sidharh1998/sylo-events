@@ -30,3 +30,12 @@ export const customers_reviews = [
     {id: 3 , video: 'https://www.youtube.com/embed/vlDzYIIOYmM'},
     {id: 4 , video: 'https://www.youtube.com/embed/vlDzYIIOYmM'},
 ]
+
+export const offer_slides = [
+    
+        { id: 1 , slide : "https://i.pinimg.com/originals/5a/8e/db/5a8edbb220543eb6da830a78a107b4bb.jpg"},
+        { id: 2 , slide : "https://png.pngtree.com/background/20210710/original/pngtree-vector-flat-shopping-promotion-discount-poster-background-picture-image_1052592.jpg"},
+        { id: 3 , slide :"https://i.pinimg.com/originals/5a/8e/db/5a8edbb220543eb6da830a78a107b4bb.jpg"},
+        { id: 4 , slide :"https://png.pngtree.com/background/20210710/original/pngtree-vector-flat-shopping-promotion-discount-poster-background-picture-image_1052592.jpg"}
+        
+]

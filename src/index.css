@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 
-.carousel_image {
-    width: 80%;
-    height: 200px;
-}
+
 
 .no-scrollbar::-webkit-scrollbar {
     display: none;
