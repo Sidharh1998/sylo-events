@@ -15,7 +15,7 @@ const BudgetCategory = () => {
             <div className="w-40 ">
               {/* venue image */}
               <div className="relative">
-              <img className=" rounded-xl" src={venue.image} alt={`Image of ${venue.name}`} />
+              <img className=" rounded-xl" src={venue.image} alt='venue' />
               <div  className='absolute  text-white p-1 rounded-lg bottom-[-4px] right-10  text-[10px] md:text-xs md:px-2 font-thin bg-gradient-to-r from-fuchsia-900 to-red-500 '>Get This package</div>
             </div>
             </div>

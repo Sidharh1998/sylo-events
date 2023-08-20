@@ -12,7 +12,7 @@ const PopularCategory = () => {
           <div key={venue.id} className="text-base md:text-lg cursor-pointer">
             <div className="w-40 md:w-56 ">
               {/* venue image */}
-              <img className="rounded-xl" src={venue.image} alt={`Image of ${venue.name}`} />
+              <img className="rounded-xl" src={venue.image} alt="venue"/>
             </div>
             <div className="font-bold  md:text-xl">{venue.name}</div>
             <div className="text-gray-500">HSR Layout ∙ 4.2km</div>
