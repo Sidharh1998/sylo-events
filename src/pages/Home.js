@@ -5,14 +5,16 @@ import PopularCategory from "../components/PopularCategory"
 import SyloSelect from "../components/SyloSelect"
 import CustonerReview from "../components/CustonerReview"
 import BudgetCategory from "../components/BudgetCategory"
+import { useState } from "react"
 
 const Home = () => {
+  const [event, setEvent] = useState('');
   return (
     <div className=" p-5">
       <SearchBar/>
       <CarouselOffer/>
-      <OccasionTypes/>
-      <PopularCategory/>
+      <OccasionTypes setEvent={setEvent} event={event}/>
+      <PopularCategory event={event}/>
       <SyloSelect/>
       <CustonerReview/>
       <BudgetCategory/>

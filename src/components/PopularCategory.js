@@ -1,13 +1,18 @@
 import { venue_list } from "../assets/data"   //list 0f venues
 import {BiFoodTag} from 'react-icons/bi' 
-const PopularCategory = () => {
+const PopularCategory = ({event}) => {
   return (
     <div className="pt-6">
-    <div className="text-center text-2xl font-extrabold">* Most Popular venues *</div>
+      {event ==='' ? (
+        <div className="text-center text-2xl font-extrabold">* Most Popular venues *</div>
+      ) : (
+        <div className="text-center text-2xl font-extrabold">* {event} *</div>
+      )}
+    
     <div className="flex pt-4 gap-6 overflow-x-auto no-scrollbar  transition delay-1000"> {/* Add 'overflow-x-auto' for horizontal scrolling */}
       {/* filtering requried  venue*/}
       {venue_list
-        .filter((venue) => venue.category === 'most-popular')
+        .filter((venue) => event === '' ? venue.category === 'most-popular' : venue.eventType.includes(event))
         .map((venue) => (
           <div key={venue.id} className="text-base md:text-lg cursor-pointer">
             <div className="w-40 md:w-56 ">
