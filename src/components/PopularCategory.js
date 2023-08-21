@@ -3,7 +3,7 @@ import {BiFoodTag} from 'react-icons/bi'
 const PopularCategory = () => {
   return (
     <div className="pt-6">
-    <div className="text-center text-2xl font-extrabold">* Most Popular venues</div>
+    <div className="text-center text-2xl font-extrabold">* Most Popular venues *</div>
     <div className="flex pt-4 gap-6 overflow-x-auto no-scrollbar  transition delay-1000"> {/* Add 'overflow-x-auto' for horizontal scrolling */}
       {/* filtering requried  venue*/}
       {venue_list
