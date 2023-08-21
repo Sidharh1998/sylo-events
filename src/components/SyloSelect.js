@@ -22,10 +22,10 @@ const SyloSelect = () => {
 
       {/*sylo content  */}
 
-      <div className='pt-6 grid sm:grid-cols-4   overflow-x-auto w-auto h-72  gap-4 transition-all'>
+      <div className='pt-6 grid  grid-cols-2 md:grid-cols-4  overflow-y-scroll no-scrollbar  w-auto h-72  gap-4 transition-all'>
 
          {event_list.map((events) => (
-          <div key={events.id} className={`${events.bgColor} cursor-pointer relative shadow-lg rounded-2xl font-bold  text-xs md:text-lg min-w-30 h-28  flex justify-center items-center`}>
+          <div key={events.id} className={`${events.bgColor} cursor-pointer relative shadow-lg rounded-2xl font-bold  text-xs md:text-lg md:min-w-30 h-28  flex justify-center items-center`}>
             <div >{events.name}</div>
             <div  className='absolute text-white p-1 rounded-lg bottom-0 text-[10px] md:text-xs md:px-2 font-thin bg-gradient-to-r from-fuchsia-900 to-red-500 '>Get This package</div>
           </div>

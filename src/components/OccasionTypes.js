@@ -6,7 +6,7 @@ const OccasionTypes = () => {
     <div className="py-4">
       <div className="font-bold text-xl">Dinesh, What's your occasion?</div>
             
-      <div className="flex flex-wrap gap-4 pt-6 justify-between">      
+      <div className="flex flex-wrap gap-4 pt-6 justify-center">      
         {event_list.map((events) => 
        (
         <div key={events.id} className="w-24 md:w-32  flex flex-col cursor-pointer ">

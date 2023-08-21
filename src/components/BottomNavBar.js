@@ -9,7 +9,7 @@ const BottomNavBar = () => {
   return (
     <div className="flex fixed bottom-0 w-screen border-t-2  border-gray-200 justify-around py-2 z-10 bg-white ">
       {/* home button*/}
-      <div className="flex flex-col ">   
+      <div className="flex flex-col cursor-pointer text-fuchsia-900">   
         <div className='text-2xl flex justify-center'>
             <BiHomeAlt/>
         </div>
@@ -17,7 +17,7 @@ const BottomNavBar = () => {
       </div>
 
        {/* search  button*/}
-       <div className="flex flex-col  ">   
+       <div className="flex flex-col cursor-pointer text-gray-400 ">   
         <div className='text-2xl  flex justify-center'>
             <FiSearch/>
         </div>
@@ -25,7 +25,7 @@ const BottomNavBar = () => {
       </div>
 
        {/* home button*/}
-       <div className="flex flex-col ">   
+       <div className="flex flex-col cursor-pointer text-gray-400 ">   
         <div className='text-2xl flex justify-center'>
             <AiOutlineMenu/>
         </div>
@@ -33,7 +33,7 @@ const BottomNavBar = () => {
       </div>
 
        {/* home button*/}
-       <div className="flex flex-col ">   
+       <div className="flex flex-col cursor-pointer text-gray-400 ">   
         <div className='text-2xl flex justify-center'>
             <CgProfile/>
         </div>
